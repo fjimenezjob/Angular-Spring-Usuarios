@@ -12,17 +12,13 @@
   <header>
     <app-header></app-header>
   </header>
+
   <div class="container">
-    <h1>Clientes app {{ title }}</h1>
-
-    <ul>
-      <li>
-        Curso : {{ curso }}
-      </li>
-    </ul>
+    <h1>Clientes app: {{ title + curso}}</h1>
+    <app-clientes></app-clientes>
   </div>
-  <app-footer></app-footer>
-
+<footer>
+    <app-footer></app-footer>
+</footer>
 </body>
-
 </html>
