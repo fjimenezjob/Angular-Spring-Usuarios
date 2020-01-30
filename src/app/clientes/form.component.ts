@@ -29,7 +29,7 @@ export class FormComponent implements OnInit {
     this.activatedRoute.params.subscribe((params) => {
       const id = params.id;
       if (id) {
-        this.clienteService.getCliente(id).subscribe((cliente) => {this.cliente = cliente; });
+        this.clienteService.getCliente(id).subscribe((cliente) => {this.cliente = cliente;});
       }
     });
   }
